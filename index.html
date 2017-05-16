@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-
+		<link href="https://fonts.googleapis.com/css?family=Federo" rel="stylesheet">
 		<!--
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
@@ -46,10 +46,13 @@
 
 		<div class="row">
 			<div class="col m3 l3 hide-on-med-and-down content-large z-depth-5">
-				Content<br>
-				Ici du contenu. En vert, la map. A droite, les dates. A gauche, le contenu de la date choisie.<br><br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-
+				<div class="content-large-header">
+					Content
+				</div>
+				<p>
+					Ici du contenu. En vert, la map. A droite, les dates. A gauche, le contenu de la date choisie.<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
+				</p>
 			</div>
 			<div class="col s12 m12 l6" style="background-color: green; margin:0;padding:0">
 				<div id="map">
@@ -57,17 +60,36 @@
 			</div>
 			<div class="col s12 m12 hide-on-large-only content-min">
 				<div class="content-min-header">
-					Content
+					<div data-target="modal1">
+						<i class="material-icons">keyboard_arrow_up</i>
+						Content
+					</div>
 				</div>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-				<br><br>
-				Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
 			</div>
 			<div class="col l3 hide-on-med-and-down">
 
 			</div>
-		</div>
+			<div id="modal1" class="modal bottom-sheet">
 
+					<div class="content-min-header">
+						<i class="material-icons">keyboard_arrow_down</i>
+						Content
+					</div>
+					<div class="modal-body">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
+							<br><br>
+							Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
+							<br />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
+							<br><br>
+							Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
+						</p>
+
+					</div>
+
+			</div>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
