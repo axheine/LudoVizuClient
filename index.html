@@ -2,7 +2,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8"></meta>
-		
+
 		<link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -36,54 +36,52 @@
 		</nav>
 
 		<ul id="slide-out" class="side-nav fixed" style="width: auto !important;">
-			
+
 			<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
 			<li><a href="#!">Second Link</a></li>
 			<li><div class="divider"></div></li>
 			<li><a class="subheader">Subheader</a></li>
 			<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 		</ul>
-		
-        
 
 		<div class="row">
-			<div class="col m3 l3 hide-on-med-and-down">
+			<div class="col m3 l3 hide-on-med-and-down content-large z-depth-5">
 				Content<br>
 				Ici du contenu. En vert, la map. A droite, les dates. A gauche, le contenu de la date choisie.<br><br>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-				<br><br>
-				Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt. 
+
 			</div>
-			<div class="col s12 m12 l6" style="background-color: green">
-				Map<br>
+			<div class="col s12 m12 l6" style="background-color: green; margin:0;padding:0">
+				<div id="map">
+				</div>
+			</div>
+			<div class="col s12 m12 hide-on-large-only content-min">
+				<div class="content-min-header">
+					Content
+				</div>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
 				<br><br>
-				Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt. 
-			</div>
-			<div class="col s12 m12 hide-on-large-only">
-				Content<br>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-				<br><br>
-				Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt. 
+				Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
 			</div>
 			<div class="col l3 hide-on-med-and-down">
-				
+
 			</div>
 		</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-		
+
 		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		<!--
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-		
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
 		-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 		<script src="js/script.js"></script>
+		<script src="js/map.js"></script>
 	</body>
 </html>
