@@ -63,6 +63,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .side-nav {
+        width: 250px !important;
+    }
+    
     #map {
         height: calc(100vh - 112px);
     }
