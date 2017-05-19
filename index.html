@@ -27,8 +27,10 @@
 		<!-- Add content here -->
 
 		<nav>
-			<div class="nav-wrapper deep-purple darken-3">
-				<a href="#" class="brand-logo">Ludoviz</a>
+			<div class="nav-wrapper orange darken-3">
+				<a href="#" class="brand-logo">Ludoviz - <span style="font-size: 0.7em">
+					Data visualization of Paris Ile-st-Louis
+				</span></a>
 				<ul id="nav-mobile" class="right hide-on-large-and-up">
 					<li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
 				</ul>
@@ -36,29 +38,31 @@
 		</nav>
 
 		<ul id="slide-out" class="side-nav fixed" style="width: auto !important;">
-			<li><a class="subheader">Dates</a></li>
+			<li><a class="header">Dates</a></li>
 		</ul>
 
 		<div class="row">
 			<div class="col m3 l3 hide-on-med-and-down content-large z-depth-3">
-				<div id="content-title-large" class="content-large-header">
-					Content
-				</div>
-				<p id="content-value-large">
-					Ici du contenu. En vert, la map. A droite, les dates. A gauche, le contenu de la date choisie.<br><br>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-				</p>
+				<div id="content-title-large" class="content-large-header"></div>
+				<p id="content-value-large"></p>
 			</div>
 			<div class="col s12 m12 l6" style="margin:0;padding:0">
-				<div id="map">
+				<div class="hide" id="map"></div>
+				<div id="intro" class="intro">
+					<div class="valign-wrapper">
+						<p class="center">
+							Hello and welcome to the LudoVizu platform. This website is designed to make an inventory of Ile St-Louis old plans and to share a visualisation along the time. Follow the path of this island History across the maps and discover how it evolved at the same time as Paris. Click on a date to begin your journey.
+						</p>
+						<p class="center">
+							The georeferencing of “Ile Saint-Louis” involves providing a spatial location to images we have previously selected. Theses raster files (pdf,jpeg or png) are representative of the island during several era of Paris History.
+						</p>
+					</div>
+
 				</div>
 			</div>
 			<div class="col s12 m12 hide-on-large-only content-min">
 				<div class="content-min-header z-depth-1 hoverable">
-					<div id="content-title-toggle-sm" data-target="modal1">
-						<i class="material-icons arrow">keyboard_arrow_up</i>
-							Content
-					</div>
+					<div id="content-title-toggle-sm" data-target="modal1"></div>
 				</div>
 			</div>
 			<div class="col l3 hide-on-med-and-down">
@@ -66,23 +70,10 @@
 			</div>
 			<div id="modal1" class="modal bottom-sheet">
 
-					<div id="content-title-sm" class="content-min-header z-depth-1 hoverable">
-						<i class="material-icons arrow">keyboard_arrow_down</i>
-						Content
-					</div>
+					<div id="content-title-sm" class="content-min-header z-depth-1 hoverable"></div>
 					<div class="modal-body">
-						<p id="content-value-sm">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-							<br><br>
-							Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
-							<br />
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere, erat in malesuada placerat, massa diam lacinia metus, vitae euismod eros ex nec dolor. Sed volutpat maximus urna vitae venenatis. Quisque condimentum rutrum condimentum. Maecenas ligula elit, fermentum a ipsum sed, iaculis pulvinar sem. Quisque congue ornare est, ac tincidunt sem sagittis id. Curabitur pulvinar quis turpis in tincidunt. Pellentesque varius odio id tellus placerat malesuada. Duis eleifend tristique odio, sit amet commodo est dictum at. Sed hendrerit lectus quis volutpat ornare. Vivamus nibh urna, mattis vel lacus a, aliquet efficitur urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed congue nec nunc vitae scelerisque. Quisque id luctus mauris. Aenean venenatis ligula ut velit consectetur, eu aliquam enim ornare.
-							<br><br>
-							Aliquam odio diam, aliquam sed fermentum id, semper vitae tellus. Curabitur ut cursus tortor, non vehicula nisi. Maecenas quam purus, rhoncus sed pellentesque et, egestas sed ipsum. Vestibulum tempor justo ut vulputate pulvinar. Aliquam erat volutpat. Etiam nec orci in neque tincidunt ullamcorper at non ipsum. Pellentesque congue erat quis massa tempor sodales. Proin finibus varius malesuada. Praesent sollicitudin enim sit amet quam rhoncus viverra. Nunc at lacus sed ligula aliquet iaculis. Pellentesque sit amet massa non massa lacinia convallis. Nunc sit amet cursus eros. Proin condimentum scelerisque nisl, nec condimentum erat pellentesque et. Sed quis luctus purus. Cras maximus ipsum quis urna ultrices, ac venenatis quam tincidunt.
-						</p>
-
+						<p id="content-value-sm"></p>
 					</div>
-
 			</div>
 		</div>
 

@@ -33,7 +33,15 @@ $(function() {
 
 });
 
+setContentIntro = function() {
+	if ($('#content-title-large').html() === "") {
+		let map = $('#map');
+		let intro = $('#intro');
 
+		map.removeClass("hide");
+		intro.addClass("hide");
+	}
+}
 
 loadDatesMenu = function() {
 	let menu = $("#slide-out");
@@ -70,6 +78,7 @@ loadDateLayer = function(date){
 };
 
 refreshContent = function(date) {
+	setContentIntro();
 	let contentTitleLarge = $("#content-title-large");
 	let contentValueLarge = $("#content-value-large");
 

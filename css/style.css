@@ -2,6 +2,10 @@
     font-family: 'Federo', sans-serif;
 }
 
+.orange {
+    background-color: #BA4402; 
+}
+
 .row {
     margin-bottom: 0 !important;
 }
@@ -19,6 +23,7 @@
     overflow-y: auto;
     height: calc(100vh - 64px);
     padding: 0 !important;
+    z-index: 900;
 }
 
 .arrow {
@@ -30,6 +35,20 @@
 .content-large > p {
     padding: 10px;
     text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+.intro {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.horizontal-separator {
+    height: 1px;
+    border:
 }
 
 .side-nav {
