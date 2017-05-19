@@ -25,7 +25,7 @@ dates = [
 		date: 1788,
 		title: "Un titre 3",
 		url: "",
-		extent: [],
+		extent: [[50.505, -0.509], [51.505, 0.491]],
 		content: "qsfizmefhazbgnfqhhmhgmqslhkgq content 3",
 		author: "",
 		markers: [],
