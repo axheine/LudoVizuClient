@@ -1,3 +1,6 @@
+var map = L.map('map').setView([51.505, -0.09], 13);
+map.layers = {};
+
 $(function() {
 
 	$('.button-collapse').sideNav({
@@ -34,6 +37,7 @@ loadDatesMenu = function() {
 	let menu = $("#slide-out");
 	dates.forEach(function(date) {
 
+		loadDateLayer(date);
 		menu.append("<li><a id='date_"+date.date+"'>"+date.date+" : "+date.title+"</a></li>");
 		$("#date_"+date.date).click(function() {
 			refreshContent(date);
@@ -43,6 +47,15 @@ loadDatesMenu = function() {
 			map.addLayer(map.layers["" + date.date]);
 		});
 	});
+};
+
+loadDateLayer = function(date){
+	if (date.georeferenced){
+		map.layers["" + date.date] = L.tileLayer(date.url);
+	}
+	else{
+		map.layers["" + date.date] = L.imageOverlay(date.url, date.extent);
+	}
 };
 
 refreshContent = function(date) {
