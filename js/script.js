@@ -15,6 +15,13 @@ $(function() {
 	});
 
 
+	$("#slide-out").off("click").click(function() {
+		console.log(window.innerWidth);
+		if(window.innerWidth <= 993) {
+			$("slide-out").sideNav('hide');
+		}
+	});
+
 	loadDatesMenu();
 
 
