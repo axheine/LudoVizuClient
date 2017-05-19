@@ -4,7 +4,7 @@ dates = [
 		title: "Un titre",
 		url: "",
 		extent: [],
-		content: "",
+		content: "qhdgmqkjhrmgqmrdhglkehrg content 1",
 		author: "",
 		markers: []
 	},
@@ -13,7 +13,7 @@ dates = [
 		title: "Un titre 2",
 		url: "",
 		extent: [],
-		content: "",
+		content: "qskhimquhrgmaiurehguhgmhmrghq content 2",
 		author: "",
 		markers: []
 	},
@@ -22,7 +22,7 @@ dates = [
 		title: "Un titre 3",
 		url: "",
 		extent: [],
-		content: "",
+		content: "qsfizmefhazbgnfqhhmhgmqslhkgq content 3",
 		author: "",
 		markers: []
 	}
