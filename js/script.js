@@ -38,6 +38,10 @@ loadDatesMenu = function() {
 		menu.append("<li><a id='date_"+date.date+"'>"+date.date+" : "+date.title+"</a></li>");
 		$("#date_"+date.date).click(function() {
 			refreshContent(date);
+			map.eachLayer(function(layer){
+				layer.remove();
+			});
+			map.addLayer(map.layers["" + date.date]);
 		});
 	});
 };
