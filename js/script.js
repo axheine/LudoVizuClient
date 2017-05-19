@@ -1,4 +1,6 @@
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map', {
+	maxBoundsViscosity: 1.0
+}).setView([51.505, -0.09], 13);
 map.layers = {};
 
 $(function() {
@@ -45,13 +47,19 @@ loadDatesMenu = function() {
 				layer.remove();
 			});
 			map.addLayer(map.layers["" + date.date]);
+			map.fitBounds(date.extent);
+			map.setMaxBounds(date.extent);
+			map.setMinZoom(date.minZoom);
 		});
 	});
 };
 
 loadDateLayer = function(date){
 	if (date.georeferenced){
-		map.layers["" + date.date] = L.tileLayer(date.url);
+		map.layers["" + date.date] = L.tileLayer(date.url, {
+			minZoom: date.minZoom,
+			maxZoom: date.maxZoom
+		});
 	}
 	else{
 		map.layers["" + date.date] = L.imageOverlay(date.url, date.extent);
