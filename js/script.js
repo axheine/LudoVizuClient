@@ -54,13 +54,13 @@ refreshContent = function(date) {
 
 	let contentTitleToggleSM = $("#content-title-toggle-sm");
 
-	let arrow_down = '<i class="material-icons">keyboard_arrow_down</i>';
-	let arrow_up = '<i class="material-icons">keyboard_arrow_up</i>';
+	let arrow_down = '<i class="material-icons arrow">keyboard_arrow_down</i>';
+	let arrow_up = '<i class="material-icons arrow">keyboard_arrow_up</i>';
 
-	contentTitleLarge.html(date.title + " - " + date.date + " - " + date.author);
+	contentTitleLarge.html(date.date + " : " + date.title + " - " + date.author);
 	contentValueLarge.html(date.content);
 
-	contentTitleSM.html(arrow_down + date.title + " - " + date.date + " - " + date.author);
+	contentTitleSM.html(arrow_down + date.date + " : " + date.title + " - " + date.author);
 	contentValueSM.html(date.content);
-	contentTitleToggleSM.html(arrow_up + date.title + " - " + date.date + " - " + date.author);
+	contentTitleToggleSM.html(arrow_up + date.date + " : " + date.title + " - " + date.author);
 }
