@@ -43,20 +43,23 @@ loadDatesMenu = function() {
 };
 
 refreshContent = function(date) {
-	let contentTitleLarge = $("#content-title");
-	let contentValueLarge = $("#content-value");
+	let contentTitleLarge = $("#content-title-large");
+	let contentValueLarge = $("#content-value-large");
 
 	let contentTitleSM = $("#content-title-sm");
 	let contentValueSM = $("#content-value-sm");
 
 	let contentTitleToggleSM = $("#content-title-toggle-sm");
 
+	let arrow_down = '<i class="material-icons">keyboard_arrow_down</i>';
+	let arrow_up = '<i class="material-icons">keyboard_arrow_up</i>';
+
 	contentTitleLarge.html(date.title);
 	contentValueLarge.html(date.content);
 
-	contentTitleSM.html(date.title);
+	contentTitleSM.html(arrow_down + date.title);
 	contentValueSM.html(date.content);
-	contentTitleToggleSM.html(date.title);
-	
+	contentTitleToggleSM.html(arrow_up + date.title);
+
 	console.log(date);
 }
