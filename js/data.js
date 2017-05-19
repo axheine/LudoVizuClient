@@ -8,7 +8,8 @@ dates = [
 		author: "",
 		markers: [],
 		color: "rgb(50,0,0)",
-		georeferenced: false
+		georeferenced: false,
+		minZoom: 9
 	},
 	{
 		date: 508,
@@ -19,7 +20,8 @@ dates = [
 		author: "",
 		markers: [],
 		color: "rgb(120,100,100)",
-		georeferenced: true
+		georeferenced: true,
+		minZoom: 9
 	},
 	{
 		date: 1788,
@@ -30,6 +32,7 @@ dates = [
 		author: "",
 		markers: [],
 		color: "rgb(120,180,180)",
-		georeferenced: true
+		georeferenced: true,
+		minZoom: 9
 	}
 ];
