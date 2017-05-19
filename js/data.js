@@ -4,7 +4,7 @@ dates = [
 		title: "Un titre",
 		url: "",
 		extent: [],
-		content: "",
+		content: "qhdgmqkjhrmgqmrdhglkehrg content 1",
 		author: "",
 		markers: [],
 		georeferenced: false
@@ -14,6 +14,7 @@ dates = [
 		title: "Un titre 2",
 		url: "",
 		content: "",
+		content: "qskhimquhrgmaiurehguhgmhmrghq content 2",
 		author: "",
 		markers: [],
 		georeferenced: true
@@ -23,6 +24,7 @@ dates = [
 		title: "Un titre 3",
 		url: "",
 		content: "",
+		content: "qsfizmefhazbgnfqhhmhgmqslhkgq content 3",
 		author: "",
 		markers: [],
 		georeferenced: true
