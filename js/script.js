@@ -57,10 +57,10 @@ refreshContent = function(date) {
 	let arrow_down = '<i class="material-icons">keyboard_arrow_down</i>';
 	let arrow_up = '<i class="material-icons">keyboard_arrow_up</i>';
 
-	contentTitleLarge.html(date.title);
+	contentTitleLarge.html(date.title + " - " + date.date + " - " + date.author);
 	contentValueLarge.html(date.content);
 
-	contentTitleSM.html(arrow_down + date.title);
+	contentTitleSM.html(arrow_down + date.title + " - " + date.date + " - " + date.author);
 	contentValueSM.html(date.content);
-	contentTitleToggleSM.html(arrow_up + date.title);
+	contentTitleToggleSM.html(arrow_up + date.title + " - " + date.date + " - " + date.author);
 }
