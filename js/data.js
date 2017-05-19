@@ -6,24 +6,25 @@ dates = [
 		extent: [],
 		content: "",
 		author: "",
-		markers: []
+		markers: [],
+		georeferenced: false
 	},
 	{
 		date: 1785,
 		title: "Un titre 2",
 		url: "",
-		extent: [],
 		content: "",
 		author: "",
-		markers: []
+		markers: [],
+		georeferenced: true
 	},
 	{
 		date: 1788,
 		title: "Un titre 3",
 		url: "",
-		extent: [],
 		content: "",
 		author: "",
-		markers: []
+		markers: [],
+		georeferenced: true
 	}
 ];
