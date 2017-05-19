@@ -67,7 +67,7 @@ loadDatesMenu = function() {
 
 loadDateLayer = function(date){
 	if (date.georeferenced){
-		map.layers["" + date.date] = L.tileLayer(date.url, {
+		map.layers["" + date.date] = L.tileLayer.wms(date.url, {
 			minZoom: date.minZoom,
 			maxZoom: date.maxZoom
 		});
