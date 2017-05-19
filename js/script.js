@@ -15,6 +15,13 @@ $(function() {
 	});
 
 
+	// Fix slideNav hiding behavior on bigger widths
+	$("#slide-out").off("click").click(function() {
+		if(window.innerWidth <= 993) {
+			$("slide-out").sideNav('hide');
+		}
+	});
+
 	loadDatesMenu();
 
 
