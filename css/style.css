@@ -30,6 +30,11 @@
 	width: 25% !important;
 }
 
+
+.side-nav > li {
+    cursor: pointer;
+}
+
 .modal-content {
     padding: 0 !important;
 }

@@ -33,7 +33,6 @@ $(function() {
 loadDatesMenu = function() {
 	let menu = $("#slide-out");
 	dates.forEach(function(date) {
-		console.log("Date: "+JSON.stringify(date));
 
 		menu.append("<li><a id='date_"+date.date+"'>"+date.date+" : "+date.title+"</a></li>");
 		$("#date_"+date.date).click(function() {
@@ -64,6 +63,4 @@ refreshContent = function(date) {
 	contentTitleSM.html(arrow_down + date.title);
 	contentValueSM.html(date.content);
 	contentTitleToggleSM.html(arrow_up + date.title);
-
-	console.log(date);
 }
