@@ -27,7 +27,7 @@ dates = [
 		date: "",
 		title: "Carolingian Era",
 		url: "",
-		extent: [[5,7767580305697654, 52,321888518997724], [5,8864845338173275, 52,353524094445326]],
+		extent: [[5.7767580305697654, 52.321888518997724], [5.8864845338173275, 52.353524094445326]],
 		content: "qsfizmefhazbgnfqhhmhgmqslhkgq content 3",
 		author: "",
 		markers: [],
