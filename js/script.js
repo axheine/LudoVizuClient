@@ -38,7 +38,10 @@ loadDatesMenu = function() {
 	dates.forEach(function(date) {
 
 		loadDateLayer(date);
-		menu.append("<li><a id='date_"+date.date+"'>"+date.date+" : "+date.title+"</a></li>");
+		menu.append('<li><a id="date_'+date.date+'"> <svg width="16" height="48">'
+   			+'<line x1="8" y1="0" x2="8" y2="50" stroke="grey" />'
+   			+'<circle cx="8" cy="24" r="5" stroke="grey" stroke-width="2" fill="'+date.color+'" />'
+		+'</svg> <span>'+date.date+" : "+date.title+"</span></a></li>");
 		$("#date_"+date.date).click(function() {
 			refreshContent(date);
 			map.eachLayer(function(layer){

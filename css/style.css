@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 600px) {
     .side-nav {
-        width: 250px !important;
+        width: 300px !important;
     }
 
     #map {
@@ -104,7 +104,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 993px) {
     .side-nav {
-        width: 250px !important;
+        width: 350px !important;
     }
 
     #map {
@@ -122,4 +122,10 @@
     .brand-logo {
         margin-left: 20px;
     }
+}
+
+
+.side-nav > li > a > span {
+    position: relative;
+    top: -38%;
 }
